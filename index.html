@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wanderlust Travels</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Example JS Library (AOS for animations) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+</head>
+<body>
+
+  <!-- HEADER SECTION -->
+  <header>
+    <h1>Wanderlust Travels</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#destinations">Destinations</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section id="home" class="hero">
+    <h2>Discover the World</h2>
+    <p>Adventure awaits — explore breathtaking destinations around the globe.</p>
+    <button>Book Now</button>
+  </section>
+
+  <!-- DESTINATIONS SECTION -->
+  <section id="destinations">
+    <h2>Top Destinations</h2>
+    <div class="destinations-container">
+      <div class="card" data-aos="fade-up">
+        <img src="images/paris.jpg" alt="Paris">
+        <h3>Paris, France</h3>
+        <p>The city of lights and love — experience the charm of Europe.</p>
+      </div>
+      <div class="card" data-aos="fade-up">
+        <img src="images/bali.jpg" alt="Bali">
+        <h3>Bali, Indonesia</h3>
+        <p>Relax on the beaches and soak in tropical paradise vibes.</p>
+      </div>
+      <div class="card" data-aos="fade-up">
+        <img src="images/newyork.jpg" alt="New York">
+        <h3>New York, USA</h3>
+        <p>The city that never sleeps — explore its skyline and culture.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY SECTION -->
+  <section id="gallery">
+    <h2>Travel Gallery</h2>
+    <div class="gallery-container">
+      <!-- Lightbox or Glide.js gallery will go here -->
+      <a href="images/paris.jpg" data-lightbox="travel"><img src="images/paris.jpg" alt=""></a>
+      <a href="images/bali.jpg" data-lightbox="travel"><img src="images/bali.jpg" alt=""></a>
+      <a href="images/newyork.jpg" data-lightbox="travel"><img src="images/newyork.jpg" alt=""></a>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Email Address" required>
+      <textarea placeholder="Message"></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 Wanderlust Travels. All rights reserved.</p>
+  </footer>
+
+  <!-- JS LIBRARIES -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+
+  <script>
+    // Initialize AOS animations
+    AOS.init();
+  </script>
+
+</body>
+</html>
